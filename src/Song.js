@@ -11,6 +11,7 @@ import {
   Artist,
   SlideContainer,
   MusicSlide,
+  ControlContainer,
 } from './styles';
 import billie from './assets/billie.png';
 
@@ -39,6 +40,8 @@ export default function Song(props) {
       <SlideContainer>
         <MusicSlide type="range" />
       </SlideContainer>
+
+      <ControlContainer>this is it</ControlContainer>
     </div>
   );
 }

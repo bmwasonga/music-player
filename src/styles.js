@@ -72,7 +72,51 @@ export const SlideContainer = styled.div`
 `;
 
 export const MusicSlide = styled.input`
-  color: #9e9a8d;
+  background: #595853;
   width: 90%;
   outline: none;
+  height: 25px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &::-moz-range-progress {
+    background: #b7b3a6;
+  }
+
+  &::-moz-range-thumb {
+    appearance: none;
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    transition: background-color 150ms;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    /* color needed to hide track marks */
+    color: transparent;
+    background: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background: red;
+  }
+`;
+
+export const ControlContainer = styled.div`
+  margin: 4em;
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  padding-top: 70%;
+  background: white;
+  position: relative;
 `;
