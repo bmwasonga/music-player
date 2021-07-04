@@ -1,0 +1,38 @@
+
+Acumin Pro Bold
+
+font-family: acumin-pro, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Acumin Pro Bold Italic
+
+font-family: acumin-pro, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Acumin Pro Italic
+
+font-family: acumin-pro, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Acumin Pro Regular
+
+font-family: acumin-pro, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+attaempt to make use of dark mode and light mode
