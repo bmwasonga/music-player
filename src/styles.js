@@ -60,6 +60,8 @@ export const SongName = styled.h2`
   color: #9e9a8d;
   margin: 0;
   padding: 0;
+  overflow-wrap: normal;
+  text-overflow: ellipsis;
 `;
 
 export const Artist = styled.p`
@@ -119,4 +121,18 @@ export const ControlContainer = styled.div`
   padding-top: 70%;
   background: white;
   position: relative;
+`;
+
+export const AlbumContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em 0;
+  border: 1px solid red;
+  margin: 16px 0;
+`;
+
+export const AlbumCover = styled.img`
+  height: 150px;
+  border-radius: 25px 25px;
 `;
