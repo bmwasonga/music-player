@@ -21,13 +21,21 @@ import billie from './assets/billie.png';
 import { data } from './assets/data';
 
 export default function List() {
-  const [isActive, setActive] = useState({
+  const [appState, setState] = useState({
     activeObject: null,
     data,
   });
 
   const handleActive = (idx) => {
-    setActive({ ...isActive, data: data[idx] });
+    setState({ ...appState, activeObject: appState.data[idx] });
+  };
+
+  const toggleActive = (idx) => {
+    if (appState.data[idx] === appState.activeObject) {
+      return 'active';
+    } else {
+      return null;
+    }
   };
 
   return (
@@ -58,7 +66,7 @@ export default function List() {
           const { title } = mdata;
           return (
             <SongListContainer
-              className={isActive ? 'active' : null}
+              className={toggleActive(idx)}
               onClick={() => {
                 handleActive(idx);
               }}
