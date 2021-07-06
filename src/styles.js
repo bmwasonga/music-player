@@ -31,6 +31,13 @@ export const Icons = styled.a`
   align-items: center;
   color: #9e9a8d;
   font-size: x-large;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #9e9a8d;
+    color: #595853;
+    border-radius: 25px 25px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -70,7 +77,6 @@ export const Artist = styled.p`
 
 export const SlideContainer = styled.div`
   width: 100%;
-  border: 1px solid red;
 `;
 
 export const MusicSlide = styled.input`
@@ -109,7 +115,6 @@ export const MusicSlide = styled.input`
   }
 
   &::-ms-fill-lower {
-    background: red;
   }
 `;
 
@@ -128,11 +133,51 @@ export const AlbumContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 1.5em 0;
-  border: 1px solid red;
   margin: 16px 0;
 `;
 
 export const AlbumCover = styled.img`
-  height: 150px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 25px 25px;
+  background-size: contain;
+`;
+
+export const SongListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px;
+
+  &:active {
+    background-color: #2a2927;
+    border-radius: 25px 25px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.66);
+  }
+`;
+
+export const SongList = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const SongNameAndTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export const SongNumber = styled.h1`
+  color: #9e9a8d;
+  padding: 0 12px;
+`;
+
+export const PlayingContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.66);
+  padding: 12px;
+  border-radius: 25px 25px 25px;
+  justify-content: space-around;
 `;

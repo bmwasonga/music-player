@@ -1,9 +1,21 @@
 import React from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
-import { BsThreeDotsVertical } from 'react-icons/bs';
-import { AiFillHeart } from 'react-icons/ai';
+import { BsThreeDotsVertical, BsPauseFill } from 'react-icons/bs';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { FiDownload } from 'react-icons/fi';
-import { Nav, Icons, SongName, AlbumContainer, AlbumCover } from './styles';
+import {
+  Nav,
+  Icons,
+  SongName,
+  AlbumContainer,
+  AlbumCover,
+  SongListContainer,
+  SongList,
+  SongNumber,
+  Artist,
+  SongNameAndTitle,
+  PlayingContainer,
+} from './styles';
 import billie from './assets/billie.png';
 
 export default function List() {
@@ -29,6 +41,78 @@ export default function List() {
           <FiDownload />
         </Icons>
       </AlbumContainer>
+
+      <SongListContainer>
+        <SongNumber>1</SongNumber>
+
+        <SongList>
+          <SongName>The name of the song</SongName>
+          <Artist>Billie</Artist>
+        </SongList>
+        <Icons>
+          <BsThreeDotsVertical />
+        </Icons>
+      </SongListContainer>
+
+      <SongListContainer>
+        <SongNumber>1</SongNumber>
+
+        <SongList>
+          <SongName>The name of the song</SongName>
+          <Artist>Billie</Artist>
+        </SongList>
+        <Icons>
+          <BsThreeDotsVertical />
+        </Icons>
+      </SongListContainer>
+
+      <SongListContainer>
+        <SongNumber>1</SongNumber>
+
+        <SongList>
+          <SongName>The name of the song</SongName>
+          <Artist>Billie</Artist>
+        </SongList>
+        <Icons>
+          <BsThreeDotsVertical />
+        </Icons>
+      </SongListContainer>
+
+      <SongListContainer>
+        <SongNumber>1</SongNumber>
+
+        <SongList>
+          <SongName>The name of the song</SongName>
+          <Artist>Billie</Artist>
+        </SongList>
+        <Icons>
+          <BsThreeDotsVertical />
+        </Icons>
+      </SongListContainer>
+
+      <SongListContainer>
+        <SongNumber>1</SongNumber>
+
+        <SongList>
+          <SongName>The name of the song</SongName>
+          <Artist>Billie</Artist>
+        </SongList>
+        <Icons>
+          <BsThreeDotsVertical />
+        </Icons>
+      </SongListContainer>
+
+      <PlayingContainer>
+        <AlbumCover src={billie} alt="billie" />
+        <SongName>The song playing</SongName>
+        <Icons>
+          <AiOutlineHeart />
+        </Icons>
+
+        <Icons>
+          <BsPauseFill />
+        </Icons>
+      </PlayingContainer>
     </div>
   );
 }
