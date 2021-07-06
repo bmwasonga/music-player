@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { BsThreeDotsVertical, BsPauseFill } from 'react-icons/bs';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
@@ -13,12 +13,23 @@ import {
   SongList,
   SongNumber,
   Artist,
-  SongNameAndTitle,
   PlayingContainer,
+  MainContainer,
 } from './styles';
 import billie from './assets/billie.png';
 
+import { data } from './assets/data';
+
 export default function List() {
+  const [isActive, setActive] = useState({
+    activeObject: null,
+    data,
+  });
+
+  const handleActive = (idx) => {
+    setActive({ ...isActive, data: data[idx] });
+  };
+
   return (
     <div>
       <Nav>
@@ -42,65 +53,37 @@ export default function List() {
         </Icons>
       </AlbumContainer>
 
-      <SongListContainer>
-        <SongNumber>1</SongNumber>
+      <MainContainer>
+        {data.map((mdata, idx) => {
+          const { title } = mdata;
+          return (
+            <SongListContainer
+              className={isActive ? 'active' : null}
+              onClick={() => {
+                handleActive(idx);
+              }}
+              key={idx}
+            >
+              <SongNumber> {idx + 1}</SongNumber>
+              <SongList>
+                <SongName>{title}</SongName>
+                <Artist>{mdata.artist.name}</Artist>
+              </SongList>
+
+              <Icons>
+                <BsThreeDotsVertical />
+              </Icons>
+            </SongListContainer>
+          );
+        })}
+      </MainContainer>
+
+      {/* <SongListContainer>
 
         <SongList>
-          <SongName>The name of the song</SongName>
-          <Artist>Billie</Artist>
         </SongList>
-        <Icons>
-          <BsThreeDotsVertical />
-        </Icons>
-      </SongListContainer>
-
-      <SongListContainer>
-        <SongNumber>1</SongNumber>
-
-        <SongList>
-          <SongName>The name of the song</SongName>
-          <Artist>Billie</Artist>
-        </SongList>
-        <Icons>
-          <BsThreeDotsVertical />
-        </Icons>
-      </SongListContainer>
-
-      <SongListContainer>
-        <SongNumber>1</SongNumber>
-
-        <SongList>
-          <SongName>The name of the song</SongName>
-          <Artist>Billie</Artist>
-        </SongList>
-        <Icons>
-          <BsThreeDotsVertical />
-        </Icons>
-      </SongListContainer>
-
-      <SongListContainer>
-        <SongNumber>1</SongNumber>
-
-        <SongList>
-          <SongName>The name of the song</SongName>
-          <Artist>Billie</Artist>
-        </SongList>
-        <Icons>
-          <BsThreeDotsVertical />
-        </Icons>
-      </SongListContainer>
-
-      <SongListContainer>
-        <SongNumber>1</SongNumber>
-
-        <SongList>
-          <SongName>The name of the song</SongName>
-          <Artist>Billie</Artist>
-        </SongList>
-        <Icons>
-          <BsThreeDotsVertical />
-        </Icons>
-      </SongListContainer>
+       
+      </SongListContainer> */}
 
       <PlayingContainer>
         <AlbumCover src={billie} alt="billie" />

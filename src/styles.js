@@ -7,7 +7,7 @@ export const Container = styled.div`
     rgba(42, 41, 39, 1) 52%,
     rgba(21, 21, 21, 1) 100%
   );
-  height: 90vh;
+  height: 950px;
   width: 450px;
   max-width: 450px;
   border-radius: 35px 35px;
@@ -151,7 +151,7 @@ export const SongListContainer = styled.div`
   justify-content: space-between;
   margin: 12px;
 
-  &:active {
+  &.active {
     background-color: #2a2927;
     border-radius: 25px 25px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.66);
@@ -180,4 +180,13 @@ export const PlayingContainer = styled.div`
   padding: 12px;
   border-radius: 25px 25px 25px;
   justify-content: space-around;
+`;
+
+export const MainContainer = styled.div`
+  overflow-y: scroll;
+  height: 490px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
