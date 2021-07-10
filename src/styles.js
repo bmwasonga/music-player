@@ -118,16 +118,6 @@ export const MusicSlide = styled.input`
   }
 `;
 
-export const ControlContainer = styled.div`
-  margin: 4em;
-  border-radius: 50%;
-  width: 70%;
-  height: auto;
-  padding-top: 70%;
-  background: white;
-  position: relative;
-`;
-
 export const AlbumContainer = styled.div`
   display: flex;
   justify-content: space-around;
@@ -189,4 +179,54 @@ export const MainContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+`;
+
+// create the four segmants for each of the four controlls
+// we shall use different colors to figure out the different color schema
+// we shall also give the pies some valies to ensure the are rightly sized
+export const ControlContainer = styled.div`
+  margin: 4em;
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  padding-top: 70%;
+  background: white;
+  position: relative;
+  overflow: hidden;
+`;
+
+export const PausePlay = styled.div`
+  background-color: red;
+  border: 1px dashed black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+`;
+
+export const PrevBtn = styled.div`
+  background-color: yellow;
+  border: 1px dashed black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+`;
+
+export const NextBtn = styled.div`
+  background-color: orange;
+  border: 1px dashed black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+`;
+
+export const ShuffleBtn = styled.div`
+  background-color: blue;
+  border: 1px dashed black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(0, -172%) rotate(-90deg) rotate(-45deg);
 `;

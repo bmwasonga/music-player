@@ -92,13 +92,6 @@ export default function List() {
         })}
       </MainContainer>
 
-      {/* <SongListContainer>
-
-        <SongList>
-        </SongList>
-       
-      </SongListContainer> */}
-
       <PlayingContainer>
         <AlbumCover src={billie} alt="billie" />
         <SongName>{appState.activeObject.title}</SongName>
