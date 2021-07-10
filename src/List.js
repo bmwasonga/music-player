@@ -16,13 +16,18 @@ import {
   PlayingContainer,
   MainContainer,
 } from './styles';
+
+import { Link } from 'react-router-dom';
+import AOS from 'aos';
 import billie from './assets/billie.png';
 
 import { data } from './assets/data';
 
+AOS.init();
+
 export default function List() {
   const [appState, setState] = useState({
-    activeObject: null,
+    activeObject: [0],
     data,
   });
 
@@ -39,12 +44,12 @@ export default function List() {
   };
 
   return (
-    <div>
+    <div id="list">
       <Nav>
         <Icons>
           <IoIosArrowBack />
         </Icons>
-        <SongName>This is the name of the song playing</SongName>
+        <SongName>{appState.activeObject.title}</SongName>
         <Icons>
           <BsThreeDotsVertical />
         </Icons>
@@ -71,6 +76,7 @@ export default function List() {
                 handleActive(idx);
               }}
               key={idx}
+              data-aos="flip-down"
             >
               <SongNumber> {idx + 1}</SongNumber>
               <SongList>
@@ -95,7 +101,7 @@ export default function List() {
 
       <PlayingContainer>
         <AlbumCover src={billie} alt="billie" />
-        <SongName>The song playing</SongName>
+        <SongName>{appState.activeObject.title}</SongName>
         <Icons>
           <AiOutlineHeart />
         </Icons>
