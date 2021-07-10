@@ -192,41 +192,76 @@ export const ControlContainer = styled.div`
   padding-top: 70%;
   background: white;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const PausePlay = styled.div`
-  background-color: red;
+  background-image: linear-gradient(
+    180deg,
+    rgba(89, 88, 83, 1) 0%,
+    rgba(42, 41, 39, 1) 52%,
+    rgba(21, 21, 21, 1) 100%
+  );
   border: 1px dashed black;
   height: 100%;
   width: 100%;
   position: absolute;
   transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const PrevBtn = styled.div`
-  background-color: yellow;
+  background-image: linear-gradient(
+    180deg,
+    rgba(89, 88, 83, 1) 0%,
+    rgba(42, 41, 39, 1) 52%,
+    rgba(21, 21, 21, 1) 100%
+  );
   border: 1px dashed black;
   height: 100%;
   width: 100%;
   position: absolute;
-  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+  transform: rotate(45deg) translate(-412px) translateY(-69px) translateX(27px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: rotate(45deg) translate(-412px) translateY(-69px) translateX(27px); */
 `;
 
 export const NextBtn = styled.div`
-  background-color: orange;
+  background-image: linear-gradient(
+    180deg,
+    rgba(89, 88, 83, 1) 0%,
+    rgba(42, 41, 39, 1) 52%,
+    rgba(21, 21, 21, 1) 100%
+  );
   border: 1px dashed black;
   height: 100%;
   width: 100%;
   position: absolute;
-  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+  transform: rotate(-225deg) translate(-419px) translateY(72px) translateX(34px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ShuffleBtn = styled.div`
-  background-color: blue;
+  background-image: linear-gradient(
+    180deg,
+    rgba(89, 88, 83, 1) 0%,
+    rgba(42, 41, 39, 1) 52%,
+    rgba(21, 21, 21, 1) 100%
+  );
   border: 1px dashed black;
   height: 100%;
   width: 100%;
   position: absolute;
   transform: translate(0, -172%) rotate(-90deg) rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
+
+/*  */

@@ -46,10 +46,31 @@ export default function Song(props) {
       </SlideContainer>
 
       <ControlContainer>
-        <PausePlay />
-        <PrevBtn />
-        <ShuffleBtn />
-        <NextBtn />
+        <PausePlay>
+          {' '}
+          <Icons>
+            <IoIosArrowBack />
+          </Icons>
+        </PausePlay>
+        <PrevBtn>
+          {' '}
+          <Icons>
+            <IoIosArrowBack />
+          </Icons>
+        </PrevBtn>
+        <ShuffleBtn>
+          {' '}
+          <Icons>
+            <IoIosArrowBack />
+          </Icons>
+        </ShuffleBtn>
+
+        <NextBtn>
+          {' '}
+          <Icons>
+            <IoIosArrowBack />
+          </Icons>
+        </NextBtn>
       </ControlContainer>
     </div>
   );
