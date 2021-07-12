@@ -29,7 +29,7 @@ export default function Song() {
           <IoIosArrowBack />
         </Icons>
         <Title>Home</Title>
-        <Icons>
+        <Icons href="/list">
           <BsThreeDotsVertical />
         </Icons>
       </Nav>

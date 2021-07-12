@@ -45,7 +45,7 @@ export default function List() {
   return (
     <div id="list">
       <Nav>
-        <Icons>
+        <Icons href="/">
           <IoIosArrowBack />
         </Icons>
         <SongName>{appState.activeObject.title}</SongName>

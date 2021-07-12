@@ -227,10 +227,12 @@ export const PrevBtn = styled.div`
   height: 200px;
   width: 200px;
   position: absolute;
-  transform: rotate(46deg) translate(-292px) translateY(-116px) translateX(54px);
+  transform: rotate(48deg) translate(-292px) translateY(-116px) translateX(54px);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+
   /* transform: rotate(45deg) translate(-412px) translateY(-69px) translateX(27px); */
 `;
 
@@ -250,6 +252,7 @@ export const NextBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 `;
 
 export const ShuffleBtn = styled.div`
@@ -263,9 +266,10 @@ export const ShuffleBtn = styled.div`
   height: 200px;
   width: 200px;
   position: absolute;
-  transform: translate(0, -191%) rotate(-86deg) rotate(-48deg) translateX(-40px)
+  transform: translate(0, -191%) rotate(-86deg) rotate(-47deg) translateX(-43px)
     translateY(47px);
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 `;
