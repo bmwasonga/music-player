@@ -37,7 +37,7 @@ export default function Song() {
       <SongCoverPhoto src={billie} alt="This is the picture" />
 
       <SongDetails>
-        <SongName>Songa name</SongName>
+        <SongName>Song name</SongName>
         <Artist>The artist will go here</Artist>
       </SongDetails>
 
