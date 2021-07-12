@@ -192,7 +192,10 @@ export const ControlContainer = styled.div`
   padding-top: 70%;
   background: white;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
+  border: none;
+
+  box-shadow: 10px 10px 42px 0px rgba(256, 256, 256, 0.2);
 `;
 
 export const PausePlay = styled.div`
@@ -203,10 +206,11 @@ export const PausePlay = styled.div`
     rgba(21, 21, 21, 1) 100%
   );
   border: 1px dashed black;
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  transform: translate(0, -31%) rotate(-90deg) rotate(-45deg);
+  transform: rotate(46deg) translate(-292px) translateY(-115px)
+    translateX(255px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,10 +224,10 @@ export const PrevBtn = styled.div`
     rgba(21, 21, 21, 1) 100%
   );
   border: 1px dashed black;
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  transform: rotate(45deg) translate(-412px) translateY(-69px) translateX(27px);
+  transform: rotate(46deg) translate(-292px) translateY(-116px) translateX(54px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,10 +242,11 @@ export const NextBtn = styled.div`
     rgba(21, 21, 21, 1) 100%
   );
   border: 1px dashed black;
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  transform: rotate(-225deg) translate(-419px) translateY(72px) translateX(34px);
+  transform: translate(0, -191%) rotate(-86deg) rotate(-48deg)
+    translateX(-241px) translateY(47px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,13 +260,12 @@ export const ShuffleBtn = styled.div`
     rgba(21, 21, 21, 1) 100%
   );
   border: 1px dashed black;
-  height: 100%;
-  width: 100%;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  transform: translate(0, -172%) rotate(-90deg) rotate(-45deg);
+  transform: translate(0, -191%) rotate(-86deg) rotate(-48deg) translateX(-40px)
+    translateY(47px);
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-
-/*  */

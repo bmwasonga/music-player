@@ -17,7 +17,6 @@ import {
   MainContainer,
 } from './styles';
 
-import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import billie from './assets/billie.png';
 

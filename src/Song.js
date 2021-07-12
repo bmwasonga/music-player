@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Context } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import {
@@ -19,7 +19,7 @@ import {
 } from './styles';
 import billie from './assets/billie.png';
 
-export default function Song(props) {
+export default function Song() {
   return (
     <div>
       {/* This will render the songs */}
@@ -37,7 +37,7 @@ export default function Song(props) {
       <SongCoverPhoto src={billie} alt="This is the picture" />
 
       <SongDetails>
-        <SongName>The Song name </SongName>
+        <SongName>Songa name</SongName>
         <Artist>The artist will go here</Artist>
       </SongDetails>
 
