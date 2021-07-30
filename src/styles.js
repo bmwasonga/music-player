@@ -15,6 +15,7 @@ export const Container = styled.div`
   -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.66);
   -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.66);
   padding: 15px;
+  margin: 20px;
 `;
 
 export const Nav = styled.div`
